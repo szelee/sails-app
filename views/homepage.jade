@@ -5,7 +5,7 @@ block content
     #index-banner.section.no-pad-bot
       .container
         h1.text_h.center.header.cd-headline.letters.type
-          span.strong #{i18n('Great Food, Great Discount')}
+          span.strong #{i18n('Tagline')}
           //span I Love 
           //span.cd-words-wrapper.waiting
             b.is-visible Eating
@@ -15,29 +15,30 @@ block content
       .center
         a.waves-effect.waves-light.btn-large.center.modal-trigger.amber.darken-1(href='#modalForm')
           i.mdi-content-add-circle.left 
-          | #{i18n('Get Din Dins Now')}
+          | #{i18n('sign-up-button')}
     // Intro and service
     #intro.section.scrollspy
       .container
         .row
           .col.s12
-            h2.center.header.text_h2
-              | Din Dins offers great list of restaurants in 
-              span.span_h2  London  
-              | with great 
-              span.span_h2  value.
+            h2.center.header.text_h2 
+              | #{i18n('Description')}
+              //| Din Dins offers great list of restaurants in 
+              //span.span_h2  London  
+              //| with great 
+              //span.span_h2  value.
           .col.s12.m4.l4
             .center.promo.promo-example
               i.mdi-maps-local-restaurant
-              h5.promo-caption Search
+              h5.promo-caption #{i18n('search')}
               p.light.center
-                | Easy to find the right restaurants of your choice.
+                | #{i18n('search-text')}
           .col.s12.m4.l4
             .center.promo.promo-example
               i.mdi-action-language
-              h5.promo-caption Menu
+              h5.promo-caption #{i18n('menu')}
               p.light.center
-                | Have the full menu display in your language. Do not worry about the foreign language.
+                | #{i18n('menu-text')}
           .col.s12.m4.l4
             h6 
               br
@@ -45,14 +46,14 @@ block content
               //i.mdi-editor-attach-money
               i.fa.fa-gbp
               br
-              h5.promo-caption Discount
+              h5.promo-caption #{i18n('discount')}
               p.light.center
-                | Get a great offer for your food when you are enjoying it.
+                | #{i18n('discount-text')}
     // Work
     #work.section.scrollspy
       .container
-        h2.header.text_b.center Restaurant
-        h3.promo-caption.center Coming Soon
+        h2.header.text_b.center #{i18n('restaurant')}
+        h3.promo-caption.center #{i18n('restaurant-text')}
         br
         br 
         //.row
@@ -164,27 +165,27 @@ block content
           .row
             .input-field.col.l6
               input#first_name.validate(type='text')
-              label(for='first_name') First Name
+              label(for='first_name') #{i18n('first-name')}
             .input-field.col.l6
               input#last_name.validate(type='text')
-              label(for='last_name') Last Name
+              label(for='last_name') #{i18n('last-name')}
           .row
             .input-field.col.l12.s12
               input#email_addr.validate(type='email')
-              label(for='email_addr') Email Address
+              label(for='email_addr') #{i18n('email')}
           .row
             .input-field.col.l12.s12
               input#arrive_date.validate.datepicker(type='date')
-              label(for='arrive_date') Arrival Date
+              label(for='arrive_date') #{i18n('arrival')}
       .modal-footer
-        a.modal-action.modal-close.waves-effect.waves-green.btn-flat(href='#!') Submit 
-        a.modal-action.modal-close.waves-effect.waves-red.btn-flat(href='#!') Cancel        
+        a.modal-action.modal-close.waves-effect.waves-green.btn-flat(href='#!') #{i18n('submit')} 
+        a.modal-action.modal-close.waves-effect.waves-red.btn-flat(href='#!') #{i18n('cancel')}        
     // Footer
     footer#contact.page-footer.default_color.scrollspy
       .container
         .row
           .col.l6.s12
-            form.col.s12
+            //form.col.s12
               .row
                 .input-field.col.s6
                   i.mdi-action-account-circle.prefix.white-text
@@ -219,7 +220,7 @@ block content
       .footer-copyright.default_color_solid
         .container
           | 2015 
-          a.white-text(href='/') Din Dins
+          a.white-text(href='/') #{i18n('Din Dins')}
     // Scripts
 block scripts
     script(src='https://code.jquery.com/jquery-2.1.1.min.js')
