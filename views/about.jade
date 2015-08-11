@@ -1,0 +1,134 @@
+﻿extends layout
+//test
+block content
+    // Team
+    #team.section.scrollspy
+      .container
+        h2.header.text_b  Our Team 
+        .row
+          .col.s12.m3
+            .card.card-avatar
+              .waves-effect.waves-block.waves-light
+                img.activator(src='img/avatar1.png')
+              .card-content
+                span.card-title.activator.grey-text.text-darken-4
+                  | Flash 
+                  br
+                  small
+                    em
+                      a.red-text.text-darken-1(href='#') CEO
+                p
+                  a.blue-text.text-lighten-2(href='/')
+                    i.fa.fa-facebook-square
+                  a.blue-text.text-lighten-2(href='/')
+                    i.fa.fa-twitter-square
+                  a.blue-text.text-lighten-2(href='/')
+                    i.fa.fa-google-plus-square
+                  a.blue-text.text-lighten-2(href='/')
+                    i.fa.fa-linkedin-square
+          .col.s12.m3
+            .card.card-avatar
+              .waves-effect.waves-block.waves-light
+                img.activator(src='img/avatar2.png')
+              .card-content
+                span.card-title.activator.grey-text.text-darken-4
+                  | Cat Woman
+                  br
+                  small
+                    em
+                      a.red-text.text-darken-1(href='#') CTO
+                p
+                  a.blue-text.text-lighten-2(href='/')
+                    i.fa.fa-facebook-square
+                  a.blue-text.text-lighten-2(href='/')
+                    i.fa.fa-twitter-square
+                  a.blue-text.text-lighten-2(href='/')
+                    i.fa.fa-google-plus-square
+                  a.blue-text.text-lighten-2(href='/')
+                    i.fa.fa-linkedin-square
+          .col.s12.m3
+            .card.card-avatar
+              .waves-effect.waves-block.waves-light
+                img.activator(src='img/avatar3.png')
+              .card-content
+                span.card-title.activator.grey-text.text-darken-4
+                  | Capt. America 
+                  br
+                  small
+                    em
+                      a.red-text.text-darken-1(href='#') CMO
+                p
+                  a.blue-text.text-lighten-2(href='/')
+                    i.fa.fa-facebook-square
+                  a.blue-text.text-lighten-2(href='/')
+                    i.fa.fa-twitter-square
+                  a.blue-text.text-lighten-2(href='/')
+                    i.fa.fa-google-plus-square
+                  a.blue-text.text-lighten-2(href='/')
+                    i.fa.fa-linkedin-square
+          .col.s12.m3
+            .card.card-avatar
+              .waves-effect.waves-block.waves-light
+                img.activator(src='img/avatar4.png')
+              .card-content
+                span.card-title.activator.grey-text.text-darken-4
+                  | Robin
+                  br
+                  small
+                    em
+                      a.red-text.text-darken-1(href='#') CIO
+                p
+                  a.blue-text.text-lighten-2(href='/')
+                    i.fa.fa-facebook-square
+                  a.blue-text.text-lighten-2(href='/')
+                    i.fa.fa-twitter-square
+                  a.blue-text.text-lighten-2(href='/')
+                    i.fa.fa-google-plus-square
+                  a.blue-text.text-lighten-2(href='/')
+                    i.fa.fa-linkedin-square
+    // Footer
+    footer#contact.page-footer.default_color.scrollspy
+      .container
+        .row
+          .col.l6.s12
+            form.col.s12
+              .row
+                .input-field.col.s6
+                  i.mdi-action-account-circle.prefix.white-text
+                  input#icon_prefix.validate.white-text(type='text')
+                  label.white-text(for='icon_prefix') First Name
+                .input-field.col.s6
+                  i.mdi-communication-email.prefix.white-text
+                  input#icon_email.validate.white-text(type='email')
+                  label.white-text(for='icon_email') Email-id
+                .input-field.col.s12
+                  i.mdi-editor-mode-edit.prefix.white-text
+                  textarea#icon_prefix2.materialize-textarea.white-text
+                  label.white-text(for='icon_prefix2') Message
+                .col.offset-s7.s5
+                  button.btn.waves-effect.waves-light.red.darken-1(type='submit', name='action')
+                    | Submit
+                    i.mdi-content-send.right.white-text
+          .col.l3.s12
+            h5.white-text dindins.club
+            ul
+              li
+                a.white-text(href='/') Home
+              li
+                a.white-text(href='/') Blog
+          .col.l3.s12
+            h5.white-text Social
+            ul
+              li
+                a.white-text(href='https://www.facebook.com/dindins')
+                  i.small.fa.fa-facebook-square.white-text
+                  |  Facebook
+      .footer-copyright.default_color
+        .container
+          | 2015 
+          a.white-text(href='/') Din Dins
+    // Scripts
+block scripts
+    script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+    script(src='javascripts/materialize.min.js')
+    script(src='javascripts/init.js')
