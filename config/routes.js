@@ -33,11 +33,17 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'homepage'
+    view: 'homepage',
+    locals: {
+      header: "Din Dins"
+    }
   },
   
   '/about': {
-    view: 'about'
+    view: 'about',
+    locals: {
+      header: "About Din Dins"
+    }
   }
 
   /***************************************************************************

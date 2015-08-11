@@ -89,7 +89,12 @@ module.exports.views = {
   *                                                                           *
   ****************************************************************************/
 
-  partials: false
+  partials: false,
 
+  
+   locals: {
+      title : 'Din Dins'
+   }
+  
 
 };
