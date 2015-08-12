@@ -15,9 +15,11 @@ block content
             b local restaurant
             b great Discount
       .center
-        a.waves-effect.waves-light.btn-large.center.modal-trigger.amber.darken-1(href='#modalForm')
+        a.waves-effect.waves-light.btn-large.center.modal-trigger.amber.darken-2(href='#modalForm',style='font-color:#6d4c41')
           i.mdi-content-add-circle.left 
           | #{i18n('sign-up-button')}
+      br
+      br
     // Intro and service
     #intro.section.scrollspy
       .container
@@ -51,11 +53,13 @@ block content
               h5.promo-caption #{i18n('discount')}
               p.light.center
                 | #{i18n('discount-text')}
+          br
+          br
     // Work
     #work.section.scrollspy
       .container
         h2.header.text_b.center #{i18n('restaurant')}
-        h3.promo-caption.center #{i18n('restaurant-text')}
+        h4.promo-caption.center #{i18n('restaurant-text')}
         br
         br 
         //.row
