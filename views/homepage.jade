@@ -5,7 +5,9 @@ block content
     #index-banner.section.no-pad-bot
       .container
         h1.text_h.center.header.cd-headline.letters.type
-          span.strong #{i18n('Tagline')}
+          span #{i18n('Tagline')}
+            h2.center.text_h2
+              | #{i18n('Description')}
           //span I Love 
           //span.cd-words-wrapper.waiting
             b.is-visible Eating
@@ -22,7 +24,7 @@ block content
         .row
           .col.s12
             h2.center.header.text_h2 
-              | #{i18n('Description')}
+              | #{i18n('Features')}
               //| Din Dins offers great list of restaurants in 
               //span.span_h2  London  
               //| with great 
@@ -179,50 +181,4 @@ block content
               label(for='arrive_date') #{i18n('arrival')}
       .modal-footer
         a.modal-action.modal-close.waves-effect.waves-green.btn-flat(href='#!') #{i18n('submit')} 
-        a.modal-action.modal-close.waves-effect.waves-red.btn-flat(href='#!') #{i18n('cancel')}        
-    // Footer
-    footer#contact.page-footer.default_color.scrollspy
-      .container
-        .row
-          .col.l6.s12
-            //form.col.s12
-              .row
-                .input-field.col.s6
-                  i.mdi-action-account-circle.prefix.white-text
-                  input#icon_prefix.validate.white-text(type='text')
-                  label.white-text(for='icon_prefix') First Name
-                .input-field.col.s6
-                  i.mdi-communication-email.prefix.white-text
-                  input#icon_email.validate.white-text(type='email')
-                  label.white-text(for='icon_email') Email-id
-                .input-field.col.s12
-                  i.mdi-editor-mode-edit.prefix.white-text
-                  textarea#icon_prefix2.materialize-textarea.white-text
-                  label.white-text(for='icon_prefix2') Message
-                .col.offset-s7.s5
-                  button.btn.waves-effect.waves-light.red.darken-1(type='submit', name='action')
-                    | Submit
-                    i.mdi-content-send.right.white-text
-          .col.l3.s12
-            h5.white-text dindins.club
-            ul
-              li
-                a.white-text(href='/') Home
-              li
-                a.white-text(href='/') Blog
-          .col.l3.s12
-            h5.white-text Social
-            ul
-              li
-                a.white-text(href='https://www.facebook.com/dindins')
-                  i.small.fa.fa-facebook-square.white-text
-                  |  Facebook
-      .footer-copyright.default_color_solid
-        .container
-          | 2015 
-          a.white-text(href='/') #{i18n('Din Dins')}
-    // Scripts
-block scripts
-    script(src='https://code.jquery.com/jquery-2.1.1.min.js')
-    script(src='js/materialize.min.js')
-    script(src='js/init.js')
+        a.modal-action.modal-close.waves-effect.waves-red.btn-flat(href='#!') #{i18n('cancel')}
