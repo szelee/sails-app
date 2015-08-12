@@ -1,4 +1,5 @@
 {
+	"logo": "dindins-m.png",
 	"Din Dins": "点点食",
 	"Service": "服务",
 	"Restaurant": "餐厅",
@@ -7,6 +8,7 @@
 	"Tagline": "超值佳肴",
 	"sign-up-button": "立刻加入点点食",
 	"Description": "点点食为你呈送一系列伦敦超值餐厅",
+	"Features": "We offer the following",
 	"search": "搜索",
 	"search-text": "极易地找到你的心仪的餐厅",
 	"menu": "餐单",
