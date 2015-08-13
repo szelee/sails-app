@@ -26,5 +26,7 @@
 	"arrival": "到达日期",
 	"cancel": "取消",
 	"submit": "提交",
-	"language": "语言"	
+	"language": "语言",
+	"signup-successful": "",
+	"signup-failed": ""		
 }

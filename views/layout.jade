@@ -48,12 +48,12 @@ html
     //modal for successful message
     div#modalSuccessful.modal
       .modal-content
-        h4 #{i18n('sign-successful')}
+        p.center #{i18n('signup-successful')}
       //.modal-footer
         a.modal-action.modal-close.waves-effect.waves-red.btn-flat(href='#!') #{i18n('close')}
-    div#modalFailed.modal.modal-fixed-footer
+    div#modalFailed.modal
       .modal-content
-        h4 #{i18n('sign-failed')}
+        p.center #{i18n('signup-failed')}
     // Footer
     footer#contact.page-footer.default_color.scrollspy
       .container
@@ -84,7 +84,9 @@ html
     script(src='js/materialize.min.js')
     script(src='js/init.js')
     script(type="text/javascript").
-        $(document).ready (function () {
+        var successMsg = '#{req.flash("success")}';
+        var failedMsg = '#{req.flash("failed")}';
+        $(document).ready (#{req.flash("success")}function () {
             $(window).scroll (function () {
                 var sT = $(this).scrollTop();
                     if (sT >= 500) {
@@ -97,10 +99,10 @@ html
             });
             
             $(window).load (function (){
-              if req.flash('success'){
+              if (successMsg){
                 $('#modalSuccessful').openModal();
               }
-              else if req.flash('failed'){
+              else if (failedMsg){
                 $('#modalFailed').openModal();
               }
               
