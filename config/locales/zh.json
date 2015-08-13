@@ -8,7 +8,7 @@
 	"Tagline": "超值佳肴",
 	"sign-up-button": "立刻加入点点食",
 	"Description": "点点食为你呈送一系列伦敦超值餐厅",
-	"Features": "We offer the following",
+	"Features": "我们提供以下的服务",
 	"search": "搜索",
 	"search-text": "极易地找到你的心仪的餐厅",
 	"menu": "餐单",
@@ -17,10 +17,14 @@
 	"discount-text": "提供超值的就餐优惠",
 	"restaurant": "餐厅",
 	"restaurant-text": "即将呈献",
-	"first-name": "名",
-	"last-name": "姓",
+	"modal-desc": "分享您的联系信息",
+	"first-name-zh": "名（中）",
+	"last-name-zh": "姓（中）",
+	"first-name": "名（英）",
+	"last-name": "姓（英）",
 	"email": "电邮",
 	"arrival": "到达日期",
 	"cancel": "取消",
-	"submit": "提交"	
+	"submit": "提交",
+	"language": "语言"	
 }

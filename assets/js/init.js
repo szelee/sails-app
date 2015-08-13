@@ -7,7 +7,8 @@
 		dismissible: false
 	});
 	$('.datepicker').pickadate({
-	  container: 'body'
+	  container: 'body',
+	  formatSubmit: 'yyyy/mm/dd'
 	})
 	
     /*** Animate word ***/

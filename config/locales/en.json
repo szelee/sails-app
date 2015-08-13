@@ -16,10 +16,12 @@
 	"discount": "Discounts",
 	"discount-text": "The great offers from our fabulous restaurants",
 	"restaurant-text": "Coming Soon!",
+	"modal-desc": "Share your information",
 	"first-name": "First Name",
 	"last-name": "Last Name",
 	"email": "Email Address",
 	"arrival": "Arrival Date",
 	"cancel": "Cancel",
-	"submit": "Submit"
+	"submit": "Submit",
+	"language": "Language"	
 }

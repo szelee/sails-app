@@ -45,12 +45,23 @@ html
             a.button-collapse(href='#', data-activates='nav-mobile')
               i.mdi-navigation-menu
     block content
+    //modal for successful message
+    div#modalSuccessful.modal
+      .modal-content
+        h4 #{i18n('sign-successful')}
+      //.modal-footer
+        a.modal-action.modal-close.waves-effect.waves-red.btn-flat(href='#!') #{i18n('close')}
+    div#modalFailed.modal.modal-fixed-footer
+      .modal-content
+        h4 #{i18n('sign-failed')}
     // Footer
     footer#contact.page-footer.default_color.scrollspy
       .container
         .row
-          .col.l12.s12
-            h5.white-text Contact
+          .col.l6.s12
+            h5.white-text #{i18n('language')}
+          .col.l6.s12
+            h5.white-text #{i18n('Contact')}
             ul#social-inline
               li
                 a.white-text(href='https://www.facebook.com/dindins',target='_blank')
@@ -83,5 +94,15 @@ html
                         $('#nav_f').removeClass('default_color_solid');
                         $('#nav_f').addClass('default_color');
                     }
-            })
+            });
+            
+            $(window).load (function (){
+              if req.flash('success'){
+                $('#modalSuccessful').openModal();
+              }
+              else if req.flash('failed'){
+                $('#modalFailed').openModal();
+              }
+              
+            });
         });

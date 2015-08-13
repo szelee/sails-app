@@ -39,6 +39,11 @@ module.exports.routes = {
     }
   },
   
+  'post /signup': {
+    controller :'Contact',
+    action : 'signup'
+  },
+  
   '/about': {
     view: 'about',
     locals: {

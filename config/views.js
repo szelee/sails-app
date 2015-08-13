@@ -90,11 +90,8 @@ module.exports.views = {
   ****************************************************************************/
 
   partials: false,
-
-  
-   locals: {
-      title : 'Din Dins'
-   }
-  
+  locals: {
+    title : 'Din Dins'
+  }
 
 };

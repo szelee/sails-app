@@ -163,26 +163,70 @@ block content
     .parallax-container
       .parallax
         img(src='images/restaurant-691397.jpg')
-    // modal
+    // modal for user signup
     div#modalForm.modal.modal-fixed-footer
-      .modal-content
-        h4 Tell us about you
-        form.col.l12.s12
-          .row
-            .input-field.col.l6
-              input#first_name.validate(type='text')
-              label(for='first_name') #{i18n('first-name')}
-            .input-field.col.l6
-              input#last_name.validate(type='text')
-              label(for='last_name') #{i18n('last-name')}
-          .row
-            .input-field.col.l12.s12
-              input#email_addr.validate(type='email')
-              label(for='email_addr') #{i18n('email')}
-          .row
-            .input-field.col.l12.s12
-              input#arrive_date.validate.datepicker(type='date')
-              label(for='arrive_date') #{i18n('arrival')}
-      .modal-footer
-        a.modal-action.modal-close.waves-effect.waves-green.btn-flat(href='#!') #{i18n('submit')} 
-        a.modal-action.modal-close.waves-effect.waves-red.btn-flat(href='#!') #{i18n('cancel')}
+      form.col.l12.s12(name='userSignupForm',action='/signup', method='POST')
+        .modal-content
+          h4 #{i18n('modal-desc')}        
+          //var locale = req.getLocale()
+          if locale == 'zh'
+            .row
+              .input-field.col.l6
+                input#last_name.validate(type='text',name='last_name_zh')
+                label(for='last_name_zh') #{i18n('last-name-zh')}
+              .input-field.col.l6
+                input#first_name.validate(type='text',name='first_name_zh')
+                label(for='first_name_zh') #{i18n('first-name-zh')}
+            .row
+              .input-field.col.l6
+                input#last_name.validate(type='text',name='last_name')
+                label(for='last_name') #{i18n('last-name')}
+              .input-field.col.l6
+                input#first_name.validate(type='text',name='first_name')
+                label(for='first_name') #{i18n('first-name')}
+            .row
+              .input-field.col.l12.s12
+                input#email_addr.validate(type='email',name='email_addr')
+                label(for='email') #{i18n('email')}
+            .row
+              .input-field.col.l12.s12
+                input#arrive_date.datepicker(type='text',name='arrival_date')
+                label(for='arrive_date') #{i18n('arrival')}  
+          else
+            .row
+              .input-field.col.l6
+                input#first_name.validate.required(type='text',name='first_name')
+                label(for='first_name') #{i18n('first-name')}
+              .input-field.col.l6
+                input#last_name.validate.required(type='text',name='last_name')
+                label(for='last_name') #{i18n('last-name')}
+            .row
+              .input-field.col.l12.s12
+                input#email_addr.validate(type='email',name='email_addr')
+                label(for='email') #{i18n('email')}
+            .row
+              .input-field.col.l12.s12
+                input#arrive_date.datepicker(type='text',name='arrival_date')
+                label(for='arrive_date') #{i18n('arrival')}
+        .modal-footer
+          input(name='_csrf',value=_csrf,type='hidden')
+          button.modal-action.modal-close.waves-effect.waves-green.btn-flat(type='submit') #{i18n('submit')} 
+          a.modal-action.modal-close.waves-effect.waves-red.btn-flat(href='#!') #{i18n('cancel')}
+  block scripts
+    script(type="text/javascript").   
+      var locale = '#{locale}';
+      if (locale == 'zh'){
+        $('.datepicker').pickadate({
+          container: 'body',
+          monthsFull: [ '一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月' ],
+          monthsShort: [ '一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二' ],
+          weekdaysFull: [ '星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六' ],
+          weekdaysShort: [ '日', '一', '二', '三', '四', '五', '六' ],
+          today: '今日',
+          clear: '清除',
+          close: '关闭',
+          firstDay: 1,
+          format: 'yyyy 年 mm 月 dd 日',
+          formatSubmit: 'yyyy/mm/dd'
+        });
+      }
