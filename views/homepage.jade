@@ -15,7 +15,11 @@ block content
             b local restaurant
             b great Discount
       .center
-        a.waves-effect.waves-light.btn-large.center.modal-trigger.amber.darken-2(href='#modalForm',style='font-color:#6d4c41')
+        a#signup-button.waves-effect.waves-light.btn-large.center.modal-trigger.amber.darken-2(href='#modalForm',style='font-color:#6d4c41')
+          i.mdi-content-add-circle.left 
+          | #{i18n('sign-up-button')}
+      #signup-fixed-button.fixed-action-btn.hide(style='bottom:50px;right:50px')
+        a#signup-button.waves-effect.waves-light.btn-large.center.modal-trigger.amber.darken-2(href='#modalForm',style='font-color:#6d4c41')
           i.mdi-content-add-circle.left 
           | #{i18n('sign-up-button')}
       br

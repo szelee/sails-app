@@ -1,5 +1,5 @@
 {
-	"logo": "dindins.png",
+	"logo": "reverse-logo1.png",
 	"Din Dins": "Din Dins",
 	"Service": "Service",
 	"restaurant": "Restaurants",
@@ -25,5 +25,9 @@
 	"submit": "Submit",
 	"language": "Language",
 	"signup-successful": "Thank you for signing up your interest. We will contact you when we are ready to launch",
-	"signup-failed": "Unfortunately, we have some issue with the system. Please contact our Customer Service for further assistance"	
+	"signup-failed": "Unfortunately, we have some issue with the system. Please contact our Customer Service for further assistance",
+	"facebook": "Follow us on Facebook",
+	"twitter": "Follow us on Twitter",
+	"instagram": "Follow us on Instagram",
+	"email-contact": "Contact us"	
 }

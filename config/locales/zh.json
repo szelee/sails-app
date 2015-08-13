@@ -1,5 +1,5 @@
 {
-	"logo": "dindins-m.png",
+	"logo": "reverse-logo-m1.png",
 	"Din Dins": "点点食",
 	"Service": "服务",
 	"Restaurant": "餐厅",
@@ -28,5 +28,9 @@
 	"submit": "提交",
 	"language": "语言",
 	"signup-successful": "谢谢！我们将会与你联系",
-	"signup-failed": "对不起，请联系我们的客户服务员"		
+	"signup-failed": "对不起，请联系我们的客户服务员",
+	"facebook": "Follow us on Facebook",
+	"twitter": "Follow us on Twitter",
+	"instagram": "Follow us on Instagram",
+	"email-contact": "Contact us"	
 }

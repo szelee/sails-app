@@ -23,7 +23,7 @@ html
         .container
           .nav-wrapper
             a#logo-container.brand-logo(href='/#top')
-              img(style='width:140px',src='/images/'+i18n('logo'))
+              img(style='width:180px',src='/images/'+i18n('logo'))
             ul.right.hide-on-med-and-down
               li
                 a(href='/#intro') #{i18n('Service')}
@@ -64,16 +64,16 @@ html
             h5.white-text #{i18n('Contact')}
             ul#social-inline
               li
-                a.white-text(href='https://www.facebook.com/dindins',target='_blank')
+                a.tooltipped.white-text(href='https://www.facebook.com/dindins',target='_blank',data-position='bottom',data-delay='50',data-tooltip='Follow us on Facebook')
                   i.small.fa.fa-facebook-square.white-text
               li
-                a.white-text(href='https://twitter.com/DinDinsClub',target='_blank')
+                a.tooltipped.white-text(href='https://twitter.com/DinDinsClub',target='_blank',data-position='bottom',data-delay='50',data-tooltip='Follow us on Twitter')
                   i.small.fa.fa-twitter-square.white-text              
               li
-                a.white-text(href='https://www.instagram.com/dindinsclub',target='_blank')
+                a.tooltipped.white-text(href='https://www.instagram.com/dindinsclub',target='_blank',data-position='bottom',data-delay='50',data-tooltip='Follow us on Instagram')
                   i.small.fa.fa-instagram.white-text
               li
-                a.white-text(href='mailto:info@dindins.club')
+                a.tooltipped.white-text(href='mailto:info@dindins.club',data-position='bottom',data-delay='50',data-tooltip='Email us')
                   i.small.fa.fa-envelope-o.white-text
       .footer-copyright.default_color_solid
         .container
@@ -92,9 +92,14 @@ html
                     if (sT >= 500) {
                         $('#nav_f').addClass('default_color_solid');
                         $('#nav_f').removeClass('default_color');
-                    }else {
+                    }
+                    else if (sT >=350){
+                        $('#signup-fixed-button').removeClass('hide');                     
+                    }
+                    else {
                         $('#nav_f').removeClass('default_color_solid');
                         $('#nav_f').addClass('default_color');
+                        $('#signup-fixed-button').addClass('hide');                        
                     }
             });
             
