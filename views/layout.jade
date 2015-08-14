@@ -86,7 +86,7 @@ html
     script(type="text/javascript").
         var successMsg = '#{req.flash("success")}';
         var failedMsg = '#{req.flash("failed")}';
-        $(document).ready (#{req.flash("success")}function () {
+        $(document).ready (function () {
             $(window).scroll (function () {
                 var sT = $(this).scrollTop();
                     if (sT >= 500) {
@@ -105,10 +105,12 @@ html
             
             $(window).load (function (){
               if (successMsg){
-                $('#modalSuccessful').openModal();
+                //$('#modalSuccessful').openModal();
+                Materialize.toast(successMsg, 4000);
               }
               else if (failedMsg){
-                $('#modalFailed').openModal();
+                //$('#modalFailed').openModal();
+                Materialize.toast(failedMsg, 4000);
               }
               
             });
