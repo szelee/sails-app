@@ -5,8 +5,8 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
     meta(name='theme-color', content='rgb(109, 76, 65)')
     meta(name='description',content='Great Restaurants, Great Discounts. Din Dins offers the best restaurants in London with great value')
-    link(rel='icon',href='logo.ico',type='image/x-icon')
-    link(rel='shortcut icon',href='logo.ico',type='image/x-icon')
+    link(rel='icon',href='/images/logo.ico',type='image/x-icon')
+    link(rel='shortcut icon',href='/images/logo.ico',type='image/x-icon')
     title=i18n(header)
     // CSS
     link(href='/styles/materialize.min.css', type='text/css', rel='stylesheet')
@@ -48,15 +48,6 @@ html
             a.button-collapse(href='#', data-activates='nav-mobile')
               i.mdi-navigation-menu
     block content
-    //modal for successful message
-    div#modalSuccessful.modal
-      .modal-content
-        p.center #{i18n('signup-successful')}
-      //.modal-footer
-        a.modal-action.modal-close.waves-effect.waves-red.btn-flat(href='#!') #{i18n('close')}
-    div#modalFailed.modal
-      .modal-content
-        p.center #{i18n('signup-failed')}
     // Footer
     footer#contact.page-footer.default_color.scrollspy
       .container
@@ -109,11 +100,11 @@ html
             $(window).load (function (){
               if (successMsg){
                 //$('#modalSuccessful').openModal();
-                Materialize.toast(successMsg, 4000);
+                Materialize.toast("#{i18n('signup-successful')}", 4000);
               }
               else if (failedMsg){
                 //$('#modalFailed').openModal();
-                Materialize.toast(failedMsg, 4000);
+                Materialize.toast("#{i18n('signup-failed')}", 4000);
               }
               
             });
