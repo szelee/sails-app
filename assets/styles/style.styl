@@ -6,7 +6,7 @@
  */
 
 varDefaultColor = #6d4c41 /*rgb(98, 7, 7)*/
-varDefaultColorO = rgba(109, 76, 65, 0.8)
+varDefaultColorO = rgba(109, 76, 65, 0)
 
 .default_color
   background-color: varDefaultColorO !important
@@ -30,7 +30,8 @@ varDefaultColorO = rgba(109, 76, 65, 0.8)
   max-height: 864px
   position: relative
   margin-top: -65px
-  background-size: cover
+  background-size: contain
+  background: rgba(70, 72, 82, 0.5)
   /*background-color: #2196F3;*/
   background-image: url('../images/breakfast.jpg')
 
@@ -68,8 +69,9 @@ varDefaultColorO = rgba(109, 76, 65, 0.8)
   line-height: 3.5rem
   
 .text_h2_desc
-  font-weight: 100
-  font-size: 40px
+  margin-top:20%
+  font-weight: 110
+  font-size: 50px
 
 .span_h2
   font-weight: 300
@@ -101,7 +103,7 @@ varDefaultColorO = rgba(109, 76, 65, 0.8)
   color: #EF9A9A
 
 nav ul a
-  font-size: 1.6rem
+  font-size: 1.2rem
   color: #FFF
   letter-spacing: 2px
   display: block
