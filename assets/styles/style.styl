@@ -6,13 +6,16 @@
  */
 
 varDefaultColor = #6d4c41 /*rgb(98, 7, 7)*/
-varDefaultColorO = rgba(109, 76, 65, 0)
+varDefaultColorO = rgba(109, 76, 65, 0.7)
 
 .default_color
   background-color: varDefaultColorO !important
   
 .default_color_solid
   background-color: varDefaultColor !important
+  
+.default_transparent
+  background-color: transparent
 
 .default_color_text
   color: varDefaultColor !important
@@ -30,11 +33,13 @@ varDefaultColorO = rgba(109, 76, 65, 0)
   max-height: 864px
   position: relative
   margin-top: -65px
-  background-size: contain
-  background: rgba(70, 72, 82, 0.5)
+  background-size: cover
   /*background-color: #2196F3;*/
-  background-image: url('../images/breakfast.jpg')
-
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ), url('../images/breakfast.jpg')
+    
 #nav_f
   box-shadow: none !important
   -webkit-box-shadow: none !important
@@ -69,9 +74,10 @@ varDefaultColorO = rgba(109, 76, 65, 0)
   line-height: 3.5rem
   
 .text_h2_desc
-  margin-top:20%
+  margin-top:40%
   font-weight: 110
   font-size: 50px
+  background-color: transparent
 
 .span_h2
   font-weight: 300
@@ -239,22 +245,25 @@ nav ul a
   .text_h
     padding: 4% 0
     font-size: 3.5em
-    font-weight: 100
+    font-weight: 110
     color: white
-    margin-top: 20%
+    margin-top: 65%
 
   #index-banner
     margin-top: -60px
     background-size: cover
-    background-image: url('../images/breakfast-small.jpg')
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),url('../images/breakfast-sm.jpg')
     
   .modal
     padding: 10px
     width: 80%
     
   .text_h2_desc
-    font-size: 25px
-    line-height: 30px
+    font-size: 38px
+    line-height: 42px
 
 input,
 textarea

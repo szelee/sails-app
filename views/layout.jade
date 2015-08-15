@@ -22,7 +22,7 @@ html
       .loader-section.section-right
     // Navigation
     .navbar-fixed
-      nav#nav_f.default_color(role='navigation')
+      nav#nav_f.default_transparent(role='navigation')
         .container
           .nav-wrapper
             a#logo-container.brand-logo(href='/#top')
@@ -85,14 +85,12 @@ html
                 var sT = $(this).scrollTop();
                     if (sT >= 500) {
                         $('#nav_f').addClass('default_color_solid');
-                        $('#nav_f').removeClass('default_color');
-                    }
-                    else if (sT >=350){
-                        $('#signup-fixed-button').removeClass('hide');                     
+                        $('#nav_f').removeClass('default_transparent');
+                        $('#signup-fixed-button').removeClass('hide');                        
                     }
                     else {
                         $('#nav_f').removeClass('default_color_solid');
-                        $('#nav_f').addClass('default_color');
+                        $('#nav_f').addClass('default_transparent');
                         $('#signup-fixed-button').addClass('hide');                        
                     }
             });
