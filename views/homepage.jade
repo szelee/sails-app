@@ -187,9 +187,12 @@ block content
                 input#first_name.validate(type='text',name='first_name')
                 label(for='first_name') #{i18n('first-name')}
             .row
-              .input-field.col.l12.s12
+              .input-field.col.l6
                 input#email_addr.validate(type='email',name='email_addr')
                 label(for='email') #{i18n('email')}
+              .input-field.col.l6
+                input#email_addr.validate(type='tel',name='mobile')
+                label(for='mobile') #{i18n('mobile')}               
             .row
               .input-field.col.l12.s12
                 input#arrive_date.datepicker(type='text',name='arrival_date')
@@ -203,9 +206,12 @@ block content
                 input#last_name.validate.required(type='text',name='last_name')
                 label(for='last_name') #{i18n('last-name')}
             .row
-              .input-field.col.l12.s12
+              .input-field.col.l6
                 input#email_addr.validate(type='email',name='email_addr')
                 label(for='email') #{i18n('email')}
+              .input-field.col.l6
+                input#email_addr.validate(type='tel',name='mobile')
+                label(for='mobile') #{i18n('mobile')}               
             .row
               .input-field.col.l12.s12
                 input#arrive_date.datepicker(type='text',name='arrival_date')
