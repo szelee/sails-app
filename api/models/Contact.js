@@ -32,6 +32,9 @@ module.exports = {
       required: true,
       unique: true
     },
+    mobile: {
+      type: 'string'
+    }, 
     arrival_date: {
       type: 'date'
     },

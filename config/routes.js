@@ -32,6 +32,8 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
+  'GET /:lang': 'ViewController.index',
+ 
   '/': {
     view: 'homepage',
     locals: {
