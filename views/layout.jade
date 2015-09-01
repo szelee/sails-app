@@ -66,13 +66,13 @@ html
           .col.l6.s12
             h5.white-text #{i18n('Contact')}
             ul#social-inline
-              li
+              //li
                 a.tooltipped.white-text(href='https://www.facebook.com/dindins',target='_blank',data-position='bottom',data-delay='50',data-tooltip='Follow us on Facebook')
                   i.small.fa.fa-facebook-square.white-text
               li
                 a.tooltipped.white-text(href='https://twitter.com/DinDinsClub',target='_blank',data-position='bottom',data-delay='50',data-tooltip='Follow us on Twitter')
                   i.small.fa.fa-twitter-square.white-text              
-              li
+              //li
                 a.tooltipped.white-text(href='https://www.instagram.com/dindinsclub',target='_blank',data-position='bottom',data-delay='50',data-tooltip='Follow us on Instagram')
                   i.small.fa.fa-instagram.white-text
               li
@@ -81,7 +81,7 @@ html
       .footer-copyright.default_color_solid
         .container
           | 2015 
-          a.white-text(href=req.url + '/') #{i18n('Din Dins')}
+          a.white-text(href=req.url + '#top') #{i18n('Din Dins')}
     block scripts
     script(src='https://code.jquery.com/jquery-2.1.1.min.js')
     script(src='/js/materialize.min.js')
