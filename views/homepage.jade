@@ -4,8 +4,10 @@ block content
     // Hero
     #index-banner.section.no-pad-bot
       .container
-        h1.text_h.center.header.cd-headline.letters.type.text_h2_desc
+        h1.text_h.center.header.cd-headline.letters.type
           span #{i18n('Tagline')}
+        h3.center.letters.text_h3
+          span #{i18n('Description')}
           //span I Love 
           //span.cd-words-wrapper.waiting
             b.is-visible Eating
@@ -33,25 +35,31 @@ block content
               //span.span_h2  London  
               //| with great 
               //span.span_h2  value.
-          .col.s12.m4.l4
+          .col.s12.m3.l3
             .center.promo.promo-example
-              i.mdi-maps-local-restaurant
+              i.mdi-action-search
               h5.promo-caption #{i18n('search')}
               p.light.center
                 | #{i18n('search-text')}
-          .col.s12.m4.l4
+          .col.s12.m3.l3
             .center.promo.promo-example
               i.mdi-action-language
               h5.promo-caption #{i18n('menu')}
               p.light.center
                 | #{i18n('menu-text')}
-          .col.s12.m4.l4
+          .col.s12.m3.l3
             .center.promo.promo-example            
-              //i.mdi-editor-attach-money
-              i.mdi-action-assignment
-              h5.promo-caption #{i18n('discount')}
+              i.material-icons.large(style='padding-top:32px;padding-bottom:20px;') 
+                | contact_phone
+              h5.promo-caption #{i18n('reservation')}
               p.light.center
-                | #{i18n('discount-text')}
+                | #{i18n('reservation-text')}
+          .col.s12.m3.l3
+            .center.promo.promo-example            
+              i.mdi-action-assignment
+              h5.promo-caption #{i18n('order')}
+              p.light.center
+                | #{i18n('order-text')}
           br
           br
     // Work

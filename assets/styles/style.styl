@@ -48,10 +48,9 @@ varDefaultColorO = rgba(109, 76, 65, 0.7)
 .text_h
   padding: 10px 0 10px 0
   font-size: 4.0em
-  font-weight: 130
+  font-weight: 300
   color: white
   margin-top: 15%
-  background-color: varDefaultColorO
   width: auto
 
 .brand-logo
@@ -70,16 +69,21 @@ varDefaultColorO = rgba(109, 76, 65, 0.7)
   height: auto
 
 .text_h2
-  font-weight: 100
+  font-weight: 400
   margin-bottom: 4%
   line-height: 3.5rem
   
 .text_h2_desc
-  margin-top:40%
-  font-weight: 300
+  margin-top: 40%
+  font-weight: 400
   font-size: 45px
   text-shadow: 0 1px 0 black
   background-color: transparent
+  
+.text_h3
+  font-size: 2.2em
+  font-weight: 300
+  color: white
 
 .span_h2
   font-weight: 300
@@ -250,6 +254,9 @@ nav ul a
     font-weight: 110
     color: white
     margin-top: 65%
+    
+  .text_h3
+    display: none
 
   #index-banner
     margin-top: -60px
@@ -308,4 +315,36 @@ nav a.button-collapse
 footer.page-footer
   margin-top: 0px !important
 
+@font-face 
+  font-family: 'Material Icons'
+  font-style: normal
+  font-weight: 400
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v7/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2')
 
+
+.material-icons
+  font-family: 'Material Icons'
+  font-weight: normal
+  font-style: normal
+  font-size: 24px
+  line-height: 1
+  letter-spacing: normal
+  text-transform: none
+  display: inline-block
+  word-wrap: normal
+  -webkit-font-feature-settings: 'liga'
+  -webkit-font-smoothing: antialiased
+
+#languageDropdown.dropdown-content
+  background-color: varDefaultColor
+  will-change: width, height
+  li
+    color: white
+    font-size: 0.8rem
+  li:hover
+    color: varDefaultColorO
+    background-color: varDefaultColorO
+  li > a, li > span 
+    display: block
+    padding: 1rem 1rem
+    color: white

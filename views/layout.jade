@@ -4,14 +4,14 @@ html
     meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
     meta(name='theme-color', content='rgb(109, 76, 65)')
-    meta(name='description',content='Great Restaurants, Great Discounts. Din Dins offers the best restaurants in London with great value')
+    meta(name='description',content=i18n('Tagline') + " " + i18n('Description'))
     link(rel='icon',href='/images/logo.ico',type='image/x-icon')
     link(rel='shortcut icon',href='/images/logo.ico',type='image/x-icon')
     title=i18n(header)
     // CSS
-    link(href='/styles/materialize.min.css', type='text/css', rel='stylesheet')
-    link(href='/styles/style.css', type='text/css', rel='stylesheet')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css', type='text/css', rel='stylesheet')
     link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', type='text/css', rel='stylesheet')
+    link(href='/styles/style.css', type='text/css', rel='stylesheet')
     script(src='/js/modernizr.js')
     // Modernizr
   body#top.scrollspy
@@ -53,30 +53,33 @@ html
     footer#contact.page-footer.default_color.scrollspy
       .container
         .row
-          .col.l6.s12
+          .col.l6.m6.s6
             h5.white-text #{i18n('language')}
             a.dropdown-button.btn.brown.darken-1(href='#',data-activates='languageDropdown') #{i18n(req.locale)}
             ul#languageDropdown.dropdown-content
               li
-                a(href='/en/') 
+                a.center(href='/en/') 
                   | #{i18n('en')}
               li
-                a(href='/zh/') 
+                a.center(href='/zh/') 
                   | #{i18n('zh')}  
-          .col.l6.s12
+          .col.l6.m6.s6
             h5.white-text #{i18n('Contact')}
             ul#social-inline
               //li
                 a.tooltipped.white-text(href='https://www.facebook.com/dindins',target='_blank',data-position='bottom',data-delay='50',data-tooltip='Follow us on Facebook')
                   i.small.fa.fa-facebook-square.white-text
               li
-                a.tooltipped.white-text(href='https://twitter.com/DinDinsClub',target='_blank',data-position='bottom',data-delay='50',data-tooltip='Follow us on Twitter')
+                a.tooltipped.white-text(href='https://twitter.com/DinDinsClub',target='_blank',data-position='bottom',data-delay='50',data-tooltip=i18n('twitter'))
                   i.small.fa.fa-twitter-square.white-text              
               //li
                 a.tooltipped.white-text(href='https://www.instagram.com/dindinsclub',target='_blank',data-position='bottom',data-delay='50',data-tooltip='Follow us on Instagram')
                   i.small.fa.fa-instagram.white-text
               li
-                a.tooltipped.white-text(href='mailto:info@dindins.club',data-position='bottom',data-delay='50',data-tooltip='Email us')
+                a.tooltipped.white-text(href='http://weibo.com/u/5688084388',target='_blank',data-position='bottom',data-delay='50',data-tooltip=i18n('weibo'))
+                  i.small.fa.fa-weibo.white-text
+              li
+                a.tooltipped.white-text(href='mailto:info@dindins.club',data-position='bottom',data-delay='50',data-tooltip=i18n('email-contact'))
                   i.small.fa.fa-envelope-o.white-text
       .footer-copyright.default_color_solid
         .container
@@ -84,7 +87,7 @@ html
           a.white-text(href=req.url + '#top') #{i18n('Din Dins')}
     block scripts
     script(src='https://code.jquery.com/jquery-2.1.1.min.js')
-    script(src='/js/materialize.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js')
     script(src='/js/init.js')
     script(type="text/javascript").
         var successMsg = '#{req.flash("success")}';
