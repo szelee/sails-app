@@ -101,10 +101,10 @@ html
         .container
           | 2015
           a.white-text(href=req.url + '#top') #{i18n('Din Dins')}
-    block scripts
     script(src='https://code.jquery.com/jquery-2.1.1.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js')
     script(src='/js/init.js')
+    block scripts
     script(type="text/javascript").
         var successMsg = '#{req.flash("success")}';
         var failedMsg = '#{req.flash("failed")}';
