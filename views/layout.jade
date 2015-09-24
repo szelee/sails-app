@@ -13,23 +13,22 @@ html
     link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', type='text/css', rel='stylesheet')
     link(href='/styles/style.css', type='text/css', rel='stylesheet')
     script(src='/js/modernizr.js')
-    
-    <!--
-To collect end-user usage analytics about your application,
-insert the following script into each page you want to track.
-Place this code immediately before the closing </head> tag,
-and before any other scripts. Your first data will appear
-automatically in just a few seconds.
--->
+    //
+      To collect end-user usage analytics about your application,
+      insert the following script into each page you want to track.
+      Place this code immediately before the closing </head> tag,
+      and before any other scripts. Your first data will appear
+      automatically in just a few seconds.
     script(type="text/javascript").
         var appInsights=window.appInsights||function(config){
             function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
         }({
-            instrumentationKey:"3c8151e5-550f-453e-b4a7-8c5c83952cb6"
+            instrumentationKey:"1458de27-e0cc-4971-b888-55d4730a5028"
         });
-        
+
         window.appInsights=appInsights;
         appInsights.trackPageView();
+    </script>
     // Modernizr
   body#top.scrollspy
     // Pre Loader
@@ -44,7 +43,7 @@ automatically in just a few seconds.
           .nav-wrapper.flow-text
             a#logo-container.brand-logo(href=req.url + '#top')
               img(style='width:180px',src='/images/'+i18n('logo'))
-              
+
             ul.right.hide-on-med-and-down
               li
                 a(href=req.url + '#intro') #{i18n('Service')}
@@ -53,7 +52,7 @@ automatically in just a few seconds.
               //li
                 a(href='/about') #{i18n('About')}
               li
-                a(href=req.url + '#contact') #{i18n('Contact')} 
+                a(href=req.url + '#contact') #{i18n('Contact')}
             ul#nav-mobile.side-nav
               li
                 a(href=req.url + '#intro') #{i18n('Service')}
@@ -75,11 +74,11 @@ automatically in just a few seconds.
             a.dropdown-button.btn.brown.darken-1(href='#',data-activates='languageDropdown') #{i18n(req.locale)}
             ul#languageDropdown.dropdown-content
               li
-                a.center(href='/en/') 
+                a.center(href='/en/')
                   | #{i18n('en')}
               li
-                a.center(href='/zh/') 
-                  | #{i18n('zh')}  
+                a.center(href='/zh/')
+                  | #{i18n('zh')}
           .col.l6.m6.s6
             h5.white-text #{i18n('Contact')}
             ul#social-inline
@@ -88,7 +87,7 @@ automatically in just a few seconds.
                   i.small.fa.fa-facebook-square.white-text
               li
                 a.tooltipped.white-text(href='https://twitter.com/DinDinsClub',target='_blank',data-position='bottom',data-delay='50',data-tooltip=i18n('twitter'))
-                  i.small.fa.fa-twitter-square.white-text              
+                  i.small.fa.fa-twitter-square.white-text
               //li
                 a.tooltipped.white-text(href='https://www.instagram.com/dindinsclub',target='_blank',data-position='bottom',data-delay='50',data-tooltip='Follow us on Instagram')
                   i.small.fa.fa-instagram.white-text
@@ -100,7 +99,7 @@ automatically in just a few seconds.
                   i.small.fa.fa-envelope-o.white-text
       .footer-copyright.default_color_solid
         .container
-          | 2015 
+          | 2015
           a.white-text(href=req.url + '#top') #{i18n('Din Dins')}
     block scripts
     script(src='https://code.jquery.com/jquery-2.1.1.min.js')
@@ -115,15 +114,15 @@ automatically in just a few seconds.
                     if (sT >= 500) {
                         $('#nav_f').addClass('default_color_solid');
                         $('#nav_f').removeClass('default_transparent');
-                        $('#signup-fixed-button').removeClass('hide');                        
+                        $('#signup-fixed-button').removeClass('hide');
                     }
                     else {
                         $('#nav_f').removeClass('default_color_solid');
                         $('#nav_f').addClass('default_transparent');
-                        $('#signup-fixed-button').addClass('hide');                        
+                        $('#signup-fixed-button').addClass('hide');
                     }
             });
-            
+
             $(window).load (function (){
               if (successMsg){
                 //$('#modalSuccessful').openModal();
@@ -133,6 +132,6 @@ automatically in just a few seconds.
                 //$('#modalFailed').openModal();
                 Materialize.toast("#{i18n('signup-failed')}", 4000);
               }
-              
+
             });
         });
