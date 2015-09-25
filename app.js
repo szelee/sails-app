@@ -22,9 +22,11 @@
 // no matter where we actually lift from.
 process.chdir(__dirname);
 
+//start of new relic
+require('sails-hook-newrelic/register');
+
 //start of app insight
 //set APPINSIGHTS_INSTRUMENTATIONKEY = process.env.APPINSIGHT_INSTRUMENTATION_KEY;
-
 var appInsights = require("applicationinsights");
 appInsights.setup("1458de27-e0cc-4971-b888-55d4730a5028").start();
 
@@ -58,7 +60,6 @@ appInsights.setup("1458de27-e0cc-4971-b888-55d4730a5028").start();
       rc = function () { return {}; };
     }
   }
-
 
   // Start server
   sails.lift(rc('sails'));
