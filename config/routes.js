@@ -31,15 +31,6 @@ module.exports.routes = {
   * `assets` directory)                                                      *
   *                                                                          *
   ***************************************************************************/
-
-  'GET /:lang': 'ViewController.index',
- 
-  '/': {
-    view: 'homepage',
-    locals: {
-      header: "Din Dins"
-    }
-  },
   
   'post /signup': {
     controller :'Contact',
@@ -51,8 +42,20 @@ module.exports.routes = {
     locals: {
       header: "About Din Dins"
     }
+  },
+  
+  '/restaurants': {
+    view: 'index'
+  },
+  
+  'GET /:lang': 'ViewController.index',
+  
+  '/': {
+    view: 'homepage',
+    locals: {
+      header: "Din Dins"
+    }
   }
-
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
