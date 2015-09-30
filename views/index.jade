@@ -40,14 +40,15 @@ head
         a(href='#')
           i.ion-social-facebook
       |       
-      .container
+      .container#top
         .row
           .col-md-8.col-md-offset-2.centered
             h1
               | Maximise your business with more Chinese Tourists
             .mtb
-              form(role='form', action='register.php', method='post', enctype='plain')
-                input.subscribe-input(type='email', name='email', placeholder='Enter your e-mail address...', required='')
+              form(role='form', action='/signupRestaurant', method='post')
+                input.subscribe-input(type='email', name='email_addr', placeholder='Enter your e-mail address...', required='')
+                input(name='_csrf',value=_csrf,type='hidden')
                 |                 
                 button.btn.btn-conf.btn-green(type='submit') Sign up Now
             // /mt
@@ -97,7 +98,7 @@ head
               | Din Dins couldn't be simpler. We'll help you to market and serve your valuable customers with our innovation.
             |             
             p
-              button.btn.btn-conf-2.btn-green Sign up Now
+              a.btn.btn-conf-2.btn-green(href='#top',role='button') Sign up Now
           // /col-md-8
     // /sep
     .container.ptb

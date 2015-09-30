@@ -37,6 +37,16 @@ module.exports.routes = {
     action : 'signup'
   },
   
+  'post /signupRestaurant': {
+    controller : 'ContactController',
+    action : 'restaurantSignup'
+  },
+  
+  'get /sendSMS': {
+    controller: 'SMSController',
+    action: 'send'
+  },
+  
   '/about': {
     view: 'about',
     locals: {
