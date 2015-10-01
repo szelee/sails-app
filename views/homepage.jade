@@ -176,7 +176,7 @@ block content
         .modal-content
           h4 #{i18n('modal-desc')}        
           //var locale = req.getLocale()
-          if locale == 'zh'
+          if req.getLocale() == 'zh'
             .row
               .input-field.col.l6
                 input#last_name.validate(type='text',name='last_name_zh')
@@ -227,7 +227,7 @@ block content
           a.modal-action.modal-close.waves-effect.waves-red.btn-flat(href='#!') #{i18n('cancel')}
   block scripts
     script(type="text/javascript").   
-      var locale = '#{locale}';
+      var locale = '#{req.getLocale()}';
       if (locale == 'zh'){
         $('.datepicker').pickadate({
           container: 'body',
