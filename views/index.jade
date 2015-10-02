@@ -44,13 +44,15 @@ head
         .row
           .col-md-8.col-md-offset-2.centered
             h1
-              | Maximise your business with more Chinese Tourists
+              | Fill more seats by attracting Chinese tourists to your restaurant
+              h3
+                | Making communication easy with our service in both English and Mandarin
             .mtb
               form(role='form', action='/signupRestaurant', method='post')
                 input.subscribe-input(type='email', name='email_addr', placeholder='Enter your e-mail address...', required='')
                 input(name='_csrf',value=_csrf,type='hidden')
                 |                 
-                button.btn.btn-conf.btn-green(type='submit') Sign up Now
+                button.btn.btn-conf.btn-green(type='submit') Get Started
             // /mt
             //h6 30 DAY FREE TRIAL - NO CREDIT CARD NEEDED.
         // /row
@@ -70,20 +72,20 @@ head
           img.img-responsive.mt(src='/img/phone.png', alt='')
       .row
         .col-md-4
-          h2 1. Manage
-          p Easy manage the menu, photos and business info online
+          h2 1. Manage Your info
+          p Easy manage your business and services list, menu, and photos in one place
           br
           div.centered
             img(src='/images/price.png')
         .col-md-4
-          h2 2. Grow
-          p Reach Chinese tourists directly in China
+          h2 2. Grow Your Business
+          p Reaching Chinese Tourists before they arrive
           br
           div.centered
             img(src='/images/subscribe.png')
         .col-md-4
-          h2 3. Delight
-          p Tools to communicate with Chinese speaking customers
+          h2 3. Delight Your Customers
+          p Use tools to better communicate and service Chinese speaking diners
           br
           div.centered
             img(src='/images/mail.png')
@@ -92,21 +94,38 @@ head
       .container
         .row.centered
           .col-md-8.col-md-offset-2
-            h1 Discover the new Market. Let us help you with the new innovation.
+            h1 8.8 Million Chinese Tourists visit Europe each year
             |             
-            h4
-              | Din Dins couldn't be simpler. We'll help you to market and serve your valuable customers with our innovation.
+            h3
+              | Din Dins will help you to attract a growing Chinese travel community in a simple and convenient way.
             |             
             p
-              a.btn.btn-conf-2.btn-green(href='#top',role='button') Sign up Now
+              a.btn.btn-conf-2.btn-green(href='#top',role='button') Get Started
           // /col-md-8
     // /sep
     .container.ptb
       .row.centered
         h2.mb
-          | Our Pricing Model
+          | Our Pricing Model: Keeping it Simple
           br
-          | It&apos;s Quite Easy To Understand.
+          br
+          div
+            p
+              strong
+                | £99 Membership Fee - what our members get
+                br
+                | £2 per confirmed reservation through Din Dins
+                br
+                | £15 per A4 Menu Translation
+                br
+            p
+              br
+              | Want to be a featured Restaurant? 
+              br
+              | Need advice on the Chinese Market? 
+              br
+              | Drop us an email.
+              
        //         
         .col-md-4
           .price-table
@@ -241,7 +260,7 @@ head
     #f
       .container
         .row.centered
-          h2 You Can Contact Us
+          h2 Get in touch.
           |           
           h5 HELLO@DINDINS.COM
           |           
