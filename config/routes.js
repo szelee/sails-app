@@ -58,6 +58,10 @@ module.exports.routes = {
     view: 'index'
   },
   
+  '/thankyou': {
+    view: 'thankyou'
+  },
+  
   'GET /:lang': 'ViewController.index',
   
   '/': {

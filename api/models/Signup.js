@@ -14,6 +14,20 @@ module.exports = {
       unique: true
     },
     
+    name : {
+      type: 'string',
+      required: true,
+    },
+    
+    rest_name : {
+      type: 'string',
+      required: true,
+    },
+    
+    phone_num : {
+      type: 'string',
+    },
+    
     toJSON: function(){
       var obj = this.toObject();
       delete obj._csrf;

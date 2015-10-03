@@ -23,13 +23,13 @@ module.exports = {
           console.log(error);
           //res.send(500, {error: "DB error!"});
           req.flash('failed', error);
-          res.redirect("/restaurants");
+          res.redirect("/forrestaurants");
         }
         else{
           console.log("successful");
           //res.send(200, contact);
           req.flash('success','Thank you for registering with Din Dins!');
-          res.redirect("/restaurants");
+          res.redirect("/thankyou");
         }
       });
     }

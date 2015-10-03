@@ -132,7 +132,7 @@ input {
 
 .subscribe-input {
 	float: left;
-	width: 65%;
+	width: 100%; /*original 65%*/
 	text-align: left;
 	margin-right: 2px;
 	color: #2B2E31;
@@ -170,6 +170,14 @@ input {
 	text-transform: uppercase;
 	padding: 12px 28px 11px 28px;
 	margin-top: 20px;
+	}	
+
+.btn-conf-3{
+	border-radius: 50px;
+	font-size: 11px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding: 12px 28px 11px 28px;
 	}	
 
 .btn-green {

@@ -31,8 +31,9 @@ head
 
   body
     #h
-      .logo
-        img(style='width:180px',src='/images/reverse-logo1.png')
+      a(href='/forrestaurants')
+        .logo
+          img(style='width:180px',src='/images/reverse-logo1.png')
       .social.hidden-xs
         a(href='#')
           i.ion-social-twitter
@@ -45,22 +46,22 @@ head
         .row
           .col-md-8.col-md-offset-2.centered
             h1
-              | Fill more seats by attracting Chinese tourists to your restaurant
+              | Thank you for contacting us.
               h3
-                | Making communication easy with our service in both English and Mandarin
+                | We will get in touch with you shortly.
             .mtb
               //form(role='form', action='/signupRestaurant', method='post')
                 input.subscribe-input(type='email', name='email_addr', placeholder='Enter your e-mail address...', required='')
                 input(name='_csrf',value=_csrf,type='hidden')
                 |                 
                 button.btn.btn-conf.btn-green(type='submit') Get Started
-              a.btn.btn-conf-2.btn-green(href='#g',role='button') Get Started
+              a.btn.btn-conf-2.btn-green(href='/forrestaurants',role='button') Home
             // /mt
             //h6 30 DAY FREE TRIAL - NO CREDIT CARD NEEDED.
         // /row
       // /container
     // /H
-    .container.ptb
+    //.container.ptb
       .row
         .col-md-12
           h1.centered Features
@@ -92,7 +93,7 @@ head
           div.centered.li_bubble
             //img(src='/images/mail.png')
     // /container
-    #sep
+    //#sep
       .container
         .row.centered
           .col-md-8.col-md-offset-2
@@ -105,7 +106,7 @@ head
               a.btn.btn-conf-2.btn-green(href='#g',role='button') Get Started
           // /col-md-8
     // /sep
-    .container.ptb
+    //.container.ptb
       .row.centered
         h2.mb
           | Our Pricing Model: Keeping it Simple
@@ -241,7 +242,7 @@ head
             img(src='/img/client5.png', alt='')
         // /row
     // /g
-    #g
+    //#g
       .container
         .row.centered
           h2
