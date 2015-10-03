@@ -13,7 +13,7 @@ head
     meta(itemprop="name" content="Din Dins - Maximise your business with more Chinese Tourists")
     meta(itemprop="description" content="Din Dins couldn't be simpler. We'll help you to market and attract more customers from China Market.")
     meta(itemprop="image" content="/images/reverse-logo1.png")
-    link(rel='icon', href='/favicon.ico')
+    link(rel='icon', href='/favicon.ico', type='image/x-icon')
     title Din Dins | Maximise your business with Chinese Tourists
     // Bootstrap core CSS
     link(href='/css/bootstrap.css', rel='stylesheet')
@@ -73,7 +73,7 @@ head
       .row
         .col-md-4
           h2 1. Manage Your info
-          p Easy manage your business and services list, menu, and photos in one place
+          p Easily manage your business and services list, menu, and photos in one place
           br
           div.centered
             img(src='/images/price.png')
@@ -109,26 +109,35 @@ head
           | Our Pricing Model: Keeping it Simple
           br
           br
-          div
-            p
-              strong
-                | £2 per confirmed reservation through Din Dins
-                br
-                | £15 per A4 Menu Translation
-                br
-                | No annual fee
-                br
-                | Terminate anytime
-                br
-                | *Only £99 Membership Fee to get started
-                br
-            p
+          p
+            strong
+              | £2 per confirmed reservation through Din Dins
               br
-              | Want to be a featured Restaurant? 
+              | £15 per A4 Menu Translation
               br
-              | Need advice on the Chinese Market? 
+              | No annual fee
               br
-              | Drop us an email.
+              | Terminate anytime
+              br
+              | *Only £99 Membership Fee to get Started
+              a.btn.btn-xs(role="button",href="#moreinfo",data-toggle="collapse",aria-expended="false", aria-controls="moreinfo") includes
+      #moreinfo.collapse.row
+        .col-md-6.col-md-offset-3.col-lg-6.col-lg-offset-3.col-sm-10.col-sm-offset-1
+          .panel.panel-success
+            .panel-heading Membership Package
+            ul.list-group
+              li.list-group-item direct marketing to Chinese customers through multiple channels in China
+              li.list-group-item free first menu translation
+              li.list-group-item monthy analytics reports
+              li.list-group-item Chinese diner etiquette pack and training              
+      .row.centered
+        p
+          br
+          | Want to be a featured Restaurant? 
+          br
+          | Need advice on the Chinese Market? 
+          br
+          | Drop us an email.
               
        //         
         .col-md-4
@@ -297,4 +306,4 @@ head
     // Placed at the end of the document so the pages load faster
     script(src='/js/jquery.min.js')
     script(src='/js/bootstrap.min.js')
-    script(src='/js/retina-1.1.0.js')
+    //script(src='/js/retina-1.1.0.js')
