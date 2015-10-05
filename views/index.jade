@@ -3,9 +3,9 @@ head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    meta(name='description', content="Din Dins couldn't be simpler. We'll help you to market and attract more customers from China Market.")
+    meta(name='description', content="Din Dins help tp market your restaurant in China, increase reservations and improve customer services with bilingual tools.")
     meta(name='author', content='Din Dins')
-    meta(property="og:title" content="Din Dins - Maximise your business with more Chinese Tourists")
+    meta(property="og:title" content="Din Dins - Connecting your business with more Chinese Tourists")
     meta(property="og:description" content="Din Dins couldn't be simpler. We'll help you to market and attract more customers from China Market.")
     meta(property="og:type" content="website")
     meta(property="og:site_name" content="Din Dins")
@@ -13,14 +13,15 @@ head
     meta(itemprop="name" content="Din Dins - Maximise your business with more Chinese Tourists")
     meta(itemprop="description" content="Din Dins couldn't be simpler. We'll help you to market and attract more customers from China Market.")
     meta(itemprop="image" content="/images/reverse-logo1.png")
-    link(rel='icon', href='/favicon.ico', type='image/x-icon')
-    title Din Dins | Maximise your business with Chinese Tourists
+    link(rel='icon', href='/images/favicon.ico', type='image/x-icon')
+    title Din Dins | Connecting your restaurants with Chinese Tourists
     // Bootstrap core CSS
     link(href='/styles/bootstrap.css', rel='stylesheet')
     // Custom styles for this template
-    link(href='/styles/ionicons.min.css', rel='stylesheet')
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', type='text/css', rel='stylesheet')
     link(href='/styles/restaurants.css', rel='stylesheet')
     link(href='/styles/linecons.css', rel='stylesheet')
+    link(href='/styles/anistyle2.css', rel='stylesheet')
     // IE10 viewport hack for Surface/desktop Windows 8 bug
     //script(src='/js/ie10-viewport-bug-workaround.js')
     // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
@@ -35,35 +36,48 @@ head
         img(style='width:180px',src='/images/reverse-logo1.png')
       .social.hidden-xs
         a(href='#')
-          i.ion-social-twitter
+          i.fa.fa-twitter
         a(href='#')
-          i.ion-social-instagram
+          i.fa.fa-weibo
         a(href='#')
-          i.ion-social-facebook
+          i.fa.fa-instagram
+        a(href='#')
+          i.fa.fa-facebook
       |       
-      .container#top
+      #top
         .row
-          .col-md-8.col-md-offset-2.centered
-            h1
-              | Fill more seats by attracting Chinese tourists to your restaurant
-              h3
-                | Making communication easy with our service in both English and Mandarin
+          .container.centered.rw-wrapper
+            h1.rw-sentence
+              | Connecting restaurants with Chinese tourists
+              h3#subheading
+                | Market your restaurant in China, increase reservations and improve customer services with bilingual tools
+                br
+              h3#subheading.rw-words.rw-words-1
+                span
+                  b 36 million 
+                  | outbound Chinese tourists in 2014
+                span
+                  b £1 billion 
+                  | spend in the UK by 2017
+                span
+                  b 24 days 
+                  | stay on average in UK
             .mtb
               //form(role='form', action='/signupRestaurant', method='post')
                 input.subscribe-input(type='email', name='email_addr', placeholder='Enter your e-mail address...', required='')
                 input(name='_csrf',value=_csrf,type='hidden')
                 |                 
                 button.btn.btn-conf.btn-green(type='submit') Get Started
-              a.btn.btn-conf-2.btn-green(href='#g',role='button') Get Started
-            // /mt
+              a.btn.btn-conf-2.btn-green(href='#next',role='button') Get Started
+            .mt
             //h6 30 DAY FREE TRIAL - NO CREDIT CARD NEEDED.
         // /row
       // /container
     // /H
-    .container.ptb
+    .container.ptb#next
       .row
         .col-md-12
-          h1.centered Features
+          h1.centered Our Solutions
           //p.store
             a(href='#')
               img(src='/img/app-store.png', height='50', alt='')
@@ -75,19 +89,19 @@ head
       .row
         .col-md-4
           h2 1. Manage Your info
-          p Easily manage your business and services list, menu, and photos in one place
+          p Easily manage your menus, services list, item photos and business listings all in one place.
           br
           div.centered.li_display
             //img(src='/images/price.png')
         .col-md-4
           h2 2. Grow Your Business
-          p Reach Chinese diners before they arrive in London
+          p Attract more tourists through different online channels in China
           br
           div.centered.li_megaphone
             //img(src='/images/subscribe.png')
         .col-md-4
           h2 3. Delight Your Customers
-          p Use tools to better communicate and service Chinese speaking diners
+          p Use bilingual tools to better communicate with and service Chinese tourists
           br
           div.centered.li_bubble
             //img(src='/images/mail.png')
@@ -96,157 +110,62 @@ head
       .container
         .row.centered
           .col-md-8.col-md-offset-2
-            h1 8.8 Million Chinese Tourists visit Europe each year
-            |             
-            h3
-              | Din Dins will help you to attract a growing Chinese travel community in a simple and convenient way.
+            h1.strong Facts about Chinese Tourists
+              h2 "£1 billion spend in the UK by 2017" 
+              h4 ~ VisitBritain
+              h2 "8.8 Million Chinese Tourists visit Europe each year" 
+              h4 ~ VisitBritain
+              h3
+                | Din Dins will help you to attract a growing Chinese travel community in a simple and convenient way.
             |             
             p
               a.btn.btn-conf-2.btn-green(href='#g',role='button') Get Started
+            br
+            br
           // /col-md-8
     // /sep
     .container.ptb
       .row.centered
         h2.mb
-          | Our Pricing Model: Keeping it Simple
+          | Our Service include:
           br
-          br
-          p
-            strong
-              | £2 per confirmed reservation through Din Dins
-              br
-              | £15 per A4 Menu Translation
-              br
-              | No annual fee
-              br
-              | Terminate anytime
-              br
-              | *Only £99 Membership Fee to get Started
-              a.btn.btn-xs(role="button",href="#moreinfo",data-toggle="collapse",aria-expended="false", aria-controls="moreinfo") includes
-      #moreinfo.collapse.row
-        .col-md-6.col-md-offset-3.col-lg-6.col-lg-offset-3.col-sm-10.col-sm-offset-1
-          .panel.panel-success
-            .panel-heading Membership Package
-            ul.list-group
-              li.list-group-item direct marketing to Chinese customers through multiple channels in China
-              li.list-group-item free first menu translation
-              li.list-group-item monthy analytics reports
-              li.list-group-item Chinese diner etiquette pack and training              
-      .row.centered
-        p
-          br
-          | Want to be a featured Restaurant? 
-          br
-          | Need advice on the Chinese Market? 
-          br
-          | Drop us an email.
-              
-       //         
-        .col-md-4
-          .price-table
-            .p-head
-              | Standard
-            |               
-            .p-body
-              ul.features
-                li 10GB Storage Space
-                |                   
-                li Free Support
-                |                   
-                li 100 Users
-                |                   
-                li 100GB Bandwith
-              |                 
-              .price
-                span.sub $
-                |                   
-                span.detail 29
-                |                   
-                span.sub /mo.
-              // /price
-              button.btn.btn-conf-2.btn-green Subscribe Now
-            // /p-body
-          // /price-table
-        // /col-md-4
-        .col-md-4
-          .price-table
-            .p-head
-              | Business
-            |               
-            .p-body
-              ul.features
-                li 50GB Storage Space
-                |                   
-                li Free Support
-                |                   
-                li 500 Users
-                |                   
-                li 500GB Bandwith
-              |                 
-              .price
-                span.sub $
-                |                   
-                span.detail 49
-                |                   
-                span.sub /mo.
-              // /price
-              button.btn.btn-conf-2.btn-green Subscribe Now
-            // /p-body
-          // /price-table
-        // /col-md-4
-        .col-md-4
-          .price-table
-            .p-head
-              | Corporate
-            |               
-            .p-body
-              ul.features
-                li 100GB Storage Space
-                |                   
-                li Free Support
-                |                   
-                li 10,000 Users
-                |                   
-                li 3TB Bandwith
-              |                 
-              .price
-                span.sub $
-                |                   
-                span.detail 89
-                |                   
-                span.sub /mo.
-              // /price
-              button.btn.btn-conf-2.btn-green Subscribe Now
-            // /p-body
-          // /price-table
-        // /col-md-4
-      // /row
-    // /container
-    //#g
-      .container
-        .row.sponsor.centered
-          .col-sm-2.col-sm-offset-1
-            img(src='/img/client1.png', alt='')
-          |           
-          .col-sm-2
-            img(src='/img/client3.png', alt='')
-          |           
-          .col-sm-2
-            img(src='/img/client2.png', alt='')
-          |           
-          .col-sm-2
-            img(src='/img/client4.png', alt='')
-          |           
-          .col-sm-2
-            img(src='/img/client5.png', alt='')
-        // /row
-    // /g
+      .row
+        //p
+          strong
+            | £2 per confirmed reservation through Din Dins
+            br
+            | £15 per A4 Menu Translation
+            br
+            | No annual fee
+            br
+            | Terminate anytime
+            br
+            | *Only £99 Membership Fee to get Started
+            a.btn.btn-xs(role="button",href="#moreinfo",data-toggle="collapse",aria-expended="false", aria-controls="moreinfo") includes
+      .col-md-8.col-md-offset-2.col-lg-8.col-lg-offset-2.col-sm-10.col-sm-offset-1
+        .panel
+          .panel-heading
+            h4
+              span.glyphicon.glyphicon-check.blue
+              | &nbsp; Direct marketing to Chinese tourists through multiple channels in China
+          .panel-heading
+            h4
+              span.glyphicon.glyphicon-check.blue
+              | &nbsp; Menu translation
+          .panel-heading
+            h4
+              span.glyphicon.glyphicon-check.blue
+              | &nbsp; Online reservation
+          .panel-heading
+            h4
+              span.glyphicon.glyphicon-check.blue
+              | &nbsp; Chinese etiquette pack and training 
     #g
       .container
         .row.centered
           h2
-            | Find out more
-            h3 Would like to get us to give you a call in person? Please fill up the form below:
+            | Get Started
+            h3 Please fill in the form below and we'll give you a call.
             br
           .col-md-6.col-md-offset-3.centered
             form(role='form', action='/signupRestaurant', method='post')
@@ -282,7 +201,7 @@ head
             // /Carousel
         // /row
       // /container
-    // /green
+    // /g
     #f
       .container
         .row.centered
@@ -292,22 +211,16 @@ head
           |           
           p.mt
             a(href='#')
-              i.ion-social-twitter
+              i.fa.fa-twitter
+            |  
+            a(href='#')
+              i.fa.fa-weibo
             |             
             a(href='#')
-              i.ion-social-dribbble
+              i.fa.fa-instagram
             |             
             a(href='#')
-              i.ion-social-instagram
-            |             
-            a(href='#')
-              i.ion-social-facebook
-            |             
-            a(href='#')
-              i.ion-social-pinterest
-            |             
-            a(href='#')
-              i.ion-social-tumblr
+              i.fa.fa-facebook
           |           
           h6.mt COPYRIGHT 2015 - Din Dins
         // /row

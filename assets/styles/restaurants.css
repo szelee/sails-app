@@ -142,6 +142,9 @@ input {
 	.subscribe-input {
 		width: 100%;
 	}
+	#subheading {
+		display: none;
+	}
 }
 
 .subscribe-submit {
@@ -188,7 +191,7 @@ input {
 /* HEADER SECTION */
 #h {
 	background: url(../images/food.jpg) no-repeat center top;
-	padding-top: 180px;
+	padding-top: 0;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
@@ -234,6 +237,7 @@ input {
 	font-weight: 700;
 	color: white;
 	font-size: 40px;
+	margin-top: -100px;
 }
 
 /* Store Links */
@@ -313,6 +317,10 @@ input {
 
 ul {
 	list-style-type: none;
+}
+
+.blue {
+	color: cadetblue;
 }
 
 /* SPONSORS */
