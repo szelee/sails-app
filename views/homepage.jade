@@ -200,7 +200,7 @@ block content
                 label(for='mobile') #{i18n('mobile')}               
             .row
               .input-field.col.l12.s12
-                input#arrive_date.datepicker(type='text',name='arrival_date')
+                input#arrive_date.datepicker(type='date',name='arrival_date')
                 label(for='arrive_date') #{i18n('arrival')}  
           else
             .row
@@ -219,10 +219,11 @@ block content
                 label(for='mobile') #{i18n('mobile')}               
             .row
               .input-field.col.l12.s12
-                input#arrive_date.datepicker(type='text',name='arrival_date')
+                input#arrive_date.datepicker(type='date',name='arrival_date')
                 label(for='arrive_date') #{i18n('arrival')}
         .modal-footer
           input(name='_csrf',value=_csrf,type='hidden')
+          input(name='lang',value=req.getLocale(),type='hidden')
           button.modal-action.modal-close.waves-effect.waves-green.btn-flat(type='submit') #{i18n('submit')} 
           a.modal-action.modal-close.waves-effect.waves-red.btn-flat(href='#!') #{i18n('cancel')}
   block scripts
@@ -239,7 +240,7 @@ block content
           clear: '清除',
           close: '关闭',
           firstDay: 1,
-          format: 'yyyy 年 mm 月 dd 日',
-          formatSubmit: 'yyyy/mm/dd'
+          //format: 'yyyy 年 mm 月 dd 日',
+          format: 'yyyy/mm/dd'
         });
       }

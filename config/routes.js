@@ -62,7 +62,7 @@ module.exports.routes = {
     view: 'thankyou'
   },
   
-  'GET /:lang': 'ViewController.index',
+  'r|^/\\b(en|zh)\\b/$|lang': 'ViewController.index',
   
   '/': {
     view: 'homepage',

@@ -42,6 +42,7 @@ module.exports = {
     toJSON: function(){
       var obj = this.toObject();
       delete obj._csrf;
+      delete obj.lang;
       return obj;
     }
   }
