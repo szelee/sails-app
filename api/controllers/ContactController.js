@@ -16,17 +16,17 @@ module.exports = {
   },
   
   restaurantSignup: function(req, res){
-    console.log("restaurants signup form");
+    sails.log.info("restaurants signup form");
     if(req.method == "POST"){
       Signup.create(req.params.all()).exec(function(error, signup){
         if(error){
-          console.log(error);
+          sails.log.error(error);
           //res.send(500, {error: "DB error!"});
-          req.flash('failed', error);
+          req.flash('failed', res.negotiate(error));
           res.redirect("/forrestaurants");
         }
         else{
-          console.log("successful");
+          sails.log.info("successful");
           //res.send(200, contact);
           req.flash('success','Thank you for registering with Din Dins!');
           res.redirect("/thankyou");
@@ -36,20 +36,20 @@ module.exports = {
   },
   
   signup: function (req, res) {
-    console.log("sign up start");
+    sails.log.info("sign up start signup form");
     var lang = req.param('lang');
-    console.log(lang);
+    sails.log.debug(lang);
     
     if(req.method == "POST"){
       Contact.create(req.params.all()).exec(function(error, contact){
         if(error){
-          console.log(error);
+          sails.log.error(error);
           //res.send(500, {error: "DB error!"});
           req.flash('failed', error);
           res.redirect("/" + lang + "/");
         }
         else{
-          console.log("successful");
+          //console.log("successful");
           //res.send(200, contact);
           req.flash('success','Thank you for registering with Din Dins!');
           res.redirect("/" + lang + "/");
