@@ -6,6 +6,7 @@ html
     meta(name='theme-color', content='rgb(109, 76, 65)')
     meta(name='description',content=i18n('Tagline') + " " + i18n('Description'))
     meta(name="baidu-site-verification",content="SJX9NgqJq1")
+    meta(name="applicable-device",content="pc,mobile")
     link(rel='icon',href='/images/favicon.ico',type='image/x-icon')
     link(rel='shortcut icon',href='/images/favicon.ico',type='image/x-icon')
     title=i18n(header)
@@ -42,8 +43,9 @@ html
             ul.right.hide-on-med-and-down
               li
                 a(href=req.url + '#intro') #{i18n('Service')}
-              li
-                a(href=req.url + '#work') #{i18n('restaurant')}
+              if req.getLocale() == 'en'
+                li
+                  a(href='/forrestaurants') #{i18n('restaurant')}
               //li
                 a(href='/about') #{i18n('About')}
               li

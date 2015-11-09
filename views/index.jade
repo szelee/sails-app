@@ -162,6 +162,12 @@ head
               | &nbsp; Chinese etiquette pack and training 
     #g
       .container
+        #error
+          .alert.alert-warning.alert-dismissible.hide(role="alert")
+            button.close(type="button",data-dismiss="alert",aria-label="Close")
+              span(aria-hidden="true") &times 
+            strong
+              | #{i18n('signup-failed')}
         .row.centered
           h2
             | Get Started
@@ -175,6 +181,7 @@ head
               input.subscribe-input(type='text', name='phone_num', placeholder='Phone number')
               input(name='_csrf',value=_csrf,type='hidden')
               button.btn.btn-conf-3.btn-green(type='submit') Send
+              
             //#carousel-example-generic.carousel.slide(data-ride='carousel') //#green
               // Wrapper for slides
               .carousel-inner
@@ -233,3 +240,22 @@ head
     script(src='/js/jquery.min.js')
     script(src='/js/bootstrap.min.js')
     //script(src='/js/retina-1.1.0.js')
+    script(type="text/javascript").
+      var successMsg = '#{req.flash("success")}';
+      var failedMsg = '#{req.flash("failed")}';
+      $(document).ready (function () {
+  
+          $(window).load (function (){
+            if (successMsg){
+              //$('#modalSuccessful').openModal();
+              //$('#myAlert').alert("#{i18n('signup-successful')}", 4000);
+            }
+            else if (failedMsg){
+              //$('#modalFailed').openModal();
+              $('#error').show();
+              //$('#error').alert("#{i18n('signup-failed')}", 4000);
+            }
+  
+          });
+      });
+

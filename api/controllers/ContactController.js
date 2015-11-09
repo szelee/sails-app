@@ -22,8 +22,8 @@ module.exports = {
         if(error){
           sails.log.error(error);
           //res.send(500, {error: "DB error!"});
-          req.flash('failed', res.negotiate(error));
-          res.redirect("/forrestaurants");
+          req.flash('failed', error.message);
+          res.redirect("/forrestaurants#error");
         }
         else{
           sails.log.info("successful");
