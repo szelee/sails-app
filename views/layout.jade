@@ -49,7 +49,7 @@ html
                 a(href=req.url + '#intro') #{i18n('Service')}
               if req.getLocale() == 'en'
                 li
-                  a(href='/forrestaurants') #{i18n('restaurant')}
+                  a(href='/forrestaurants') #{i18n('forrestaurants')}
               //li
                 a(href='/about') #{i18n('About')}
               li
@@ -57,8 +57,9 @@ html
             ul#nav-mobile.side-nav
               li
                 a(href=req.url + '#intro') #{i18n('Service')}
-              li
-                a(href=req.url + '#work') #{i18n('restaurant')}
+              if req.getLocale() == 'en'
+                li
+                  a(href='/forrestaurants') #{i18n('forrestaurants')}
               //li
                 a(href='/about') #{i18n('About')}
               li
