@@ -16,6 +16,9 @@ html
     link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', type='text/css', rel='stylesheet')
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
     link(href='/styles/style.css', type='text/css', rel='stylesheet')
+    link(rel="alternate",hreflang='x-default',href='http://www.dindins.club')
+    link(rel="alternate",hreflang='zh',href='http://www.dindins.club/zh')
+    link(rel="alternate",hreflang='en',href='http://www.dindins.club')
     script(src='/js/modernizr.js')
     script(type="text/javascript").
         var appInsights=window.appInsights||function(config){
@@ -72,10 +75,10 @@ html
             a.dropdown-button.btn.brown.darken-1(href='#',data-activates='languageDropdown') #{i18n(req.locale)}
             ul#languageDropdown.dropdown-content
               li
-                a.center(href='/en/')
+                a.center(href='/en/',hreflang='en')
                   | #{i18n('en')}
               li
-                a.center(href='/zh/')
+                a.center(href='/zh/',hreflang='zh')
                   | #{i18n('zh')}
           .col.l6.m6.s6
             h5.white-text #{i18n('Contact')}
