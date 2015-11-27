@@ -40,5 +40,7 @@
 	"weibo": "跟着我们的微博",
 	"email-contact": "联系电址",
     "en": "ENGLISH",
-	"zh": "中文"	
+	"zh-cn": "中文",
+	"zh-hk": "漢語",
+	"blog": "博客"	
 }

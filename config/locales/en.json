@@ -38,5 +38,7 @@
 	"weibo": "Follow us on Weibo",
 	"email-contact": "Contact us",
 	"en": "ENGLISH",
-	"zh": "中文"
+	"zh-cn": "中文",
+	"zh-hk": "漢語",
+	"blog": "Blog"
 }

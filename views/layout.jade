@@ -54,6 +54,8 @@ html
                 a(href='/about') #{i18n('About')}
               li
                 a(href=req.url + '#contact') #{i18n('Contact')}
+              li
+                a(href='http://blog.dindins.club') #{i18n('blog')}
             ul#nav-mobile.side-nav
               li
                 a(href=req.url + '#intro') #{i18n('Service')}
@@ -64,6 +66,8 @@ html
                 a(href='/about') #{i18n('About')}
               li
                 a(href=req.url + '#contact') #{i18n('Contact')}
+              li
+                a(href='http://blog.dindins.club') #{i18n('blog')}
             a.button-collapse(href='#', data-activates='nav-mobile')
               i.mdi-navigation-menu
     block content
@@ -79,8 +83,11 @@ html
                 a.center(href='/en/',hreflang='en')
                   | #{i18n('en')}
               li
-                a.center(href='/zh/',hreflang='zh')
-                  | #{i18n('zh')}
+                a.center(href='/zh-cn/',hreflang='zh-cn')
+                  | #{i18n('zh-cn')}
+              li
+                a.center(href='/zh-hk/',hreflang='zh-hk')
+                  | #{i18n('zh-hk')}
           .col.l6.m6.s6
             h5.white-text #{i18n('Contact')}
             ul#social-inline
@@ -94,7 +101,7 @@ html
                 a.tooltipped.white-text(href='https://www.instagram.com/dindinsclub',target='_blank',data-position='bottom',data-delay='50',data-tooltip='Follow us on Instagram')
                   i.small.fa.fa-instagram.white-text
               li
-                a.tooltipped.white-text(href='http://weibo.com/u/5688084388',target='_blank',data-position='bottom',data-delay='50',data-tooltip=i18n('weibo'))
+                a.tooltipped.white-text(href='http://www.weibo.com/dindinsclub',target='_blank',data-position='bottom',data-delay='50',data-tooltip=i18n('weibo'))
                   i.small.fa.fa-weibo.white-text
               li
                 a.tooltipped.white-text(href='mailto:hello@dindins.club',data-position='bottom',data-delay='50',data-tooltip=i18n('email-contact'))
