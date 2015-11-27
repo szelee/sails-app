@@ -1,21 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	  	  
+<!-- www.check-domains.com sitemap generator -->
 
 <url>
-  <loc>http://www.dindins.club/</loc>
+   <loc>http://www.dindins.club/</loc>
+   <lastmod>2015-11-27T20:23:47+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>1.0000</priority>
 </url>
 <url>
-  <loc>http://www.dindins.club/en/</loc>
+   <loc>http://www.dindins.club/forrestaurants</loc>
+   <lastmod>2015-11-27T20:23:47+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
 </url>
 <url>
-  <loc>http://www.dindins.club/zh/</loc>
+   <loc>http://blog.dindins.club/</loc>
+   <lastmod>2015-11-27T20:23:47+00:00</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.8000</priority>
 </url>
 <url>
-  <loc>http://www.dindins.club/forrestaurants/</loc>
+   <loc>http://www.dindins.club/en/</loc>
+   <lastmod>2015-11-27T20:23:47+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>http://www.dindins.club/zh-cn/</loc>
+   <lastmod>2015-11-27T20:23:47+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>http://www.dindins.club/zh-hk/</loc>
+   <lastmod>2015-11-27T20:23:47+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
 </url>
 </urlset>
