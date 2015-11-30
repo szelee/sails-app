@@ -19,8 +19,6 @@ module.exports = {
 
    models: {
      connection: 'localDiskDb'
-   },
-   
-    "assets_path": "  /",
+   }
 
 };

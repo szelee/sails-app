@@ -10,18 +10,6 @@
  * http://sailsjs.org/#!/documentation/concepts/Logging
  */
 
-var winston = require('winston');
-
-var customLogger = new winston.Logger({
-    transports: [
-        new(winston.transports.File)({
-            level: 'debug',
-            filename: './logs/sails.log'
-        }),
-    ],
-});
-
-
 module.exports.log = {
 
   /***************************************************************************
@@ -36,7 +24,6 @@ module.exports.log = {
   *                                                                          *
   ***************************************************************************/
 
-  //level: 'info'
-  colors: false,  // To get clean logs without prefixes or color codings
-  custom: customLogger
+  level: 'info'
+
 };

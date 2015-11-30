@@ -26,7 +26,6 @@ module.exports = {
    ***************************************************************************/
 
   // port: 80,
-  "assets_path": "http://cdn.dindins.club/dindins/",
   port: process.env.port,
   hookTimeout: 60000,
 
