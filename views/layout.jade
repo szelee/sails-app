@@ -82,6 +82,8 @@ html
                 | #{i18n('zh-hk')}
               else if (req.getLocale() == 'zh-cn') || (req.getLocale() == 'zh-sg' )
                 | #{i18n('zh-cn')}
+              else
+                | #{i18n(req.getLocale())}
             ul#languageDropdown.dropdown-content
               li
                 a.center(href='/en/',hreflang='en')
