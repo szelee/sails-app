@@ -77,7 +77,7 @@ html
         .row
           .col.l6.m6.s6
             h5.white-text #{i18n('language')}
-            a.dropdown-button.btn.brown.darken-1(href='#',data-activates='languageDropdown') #{i18n(req.locale)}
+            a.dropdown-button.btn.brown.darken-1(href='#',data-activates='languageDropdown') #{i18n(req.getLocale())}
             ul#languageDropdown.dropdown-content
               li
                 a.center(href='/en/',hreflang='en')
