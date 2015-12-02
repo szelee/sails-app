@@ -62,7 +62,7 @@ module.exports.routes = {
     view: 'thankyou'
   },
   
-  'r|^/\\b(en|zh-cn|zh-hk)\\b|lang': 'ViewController.index',
+  'r|^/\\b(en|zh-cn|zh-tw)\\b|lang': 'ViewController.index',
   
   '/': {
     view: 'homepage',

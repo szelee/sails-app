@@ -77,7 +77,11 @@ html
         .row
           .col.l6.m6.s6
             h5.white-text #{i18n('language')}
-            a.dropdown-button.btn.brown.darken-1(href='#',data-activates='languageDropdown') #{i18n(req.getLocale())}
+            a.dropdown-button.btn.brown.darken-1(href='#',data-activates='languageDropdown') 
+              if (req.getLocale() == 'zh-hk') || (req.getLocale() == 'zh-tw' )
+                | #{i18n('zh-hk')}
+              else if (req.getLocale() == 'zh-cn') || (req.getLocale() == 'zh-sg' )
+                | #{i18n('zh-cn')}
             ul#languageDropdown.dropdown-content
               li
                 a.center(href='/en/',hreflang='en')
@@ -86,7 +90,7 @@ html
                 a.center(href='/zh-cn/',hreflang='zh-cn')
                   | #{i18n('zh-cn')}
               li
-                a.center(href='/zh-hk/',hreflang='zh-hk')
+                a.center(href='/zh-tw/',hreflang='zh-hk')
                   | #{i18n('zh-hk')}
           .col.l6.m6.s6
             h5.white-text #{i18n('Contact')}
