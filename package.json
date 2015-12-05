@@ -27,6 +27,7 @@
     "rc": "~0.5.0",
     "sails": "~0.11.0",
     "sails-disk": "~0.10.0",
+    "sails-hook-email": "^0.12.1",
     "sails-hook-newrelic": "^0.2.2",
     "sails-mongo": "^0.11.2",
     "winston": "^1.1.1"
