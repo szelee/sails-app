@@ -38,6 +38,7 @@ module.exports.routes = {
   },
   
   'get /blog/ghost': 'https://www.dindins.club/blog/ghost',
+  'get /ghost': 'https://www.dindins.club/blog/ghost',
   
   'post /signupRestaurant': {
     controller : 'ContactController',
