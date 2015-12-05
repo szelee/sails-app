@@ -37,6 +37,8 @@ module.exports.routes = {
     action : 'signup'
   },
   
+  'get /ghost': 'https://www.dindins.club/blog/ghost',
+  
   'post /signupRestaurant': {
     controller : 'ContactController',
     action : 'restaurantSignup'
