@@ -46,12 +46,20 @@ module.exports = {
           sails.log.error(error);
           //res.send(500, {error: "DB error!"});
           req.flash('failed', error);
+          if(lang=="zh-hk")
+            lang = "zh-tw";
+          else if (lang=="zh-sg")
+            lang = "zh-cn";
           res.redirect("/" + lang + "/");
         }
         else{
           //console.log("successful");
           //res.send(200, contact);
           req.flash('success','Thank you for registering with Din Dins!');
+          if(lang=="zh-hk")
+            lang = "zh-tw";
+          else if (lang=="zh-sg")
+            lang = "zh-cn";
           res.redirect("/" + lang + "/");
         }
       });

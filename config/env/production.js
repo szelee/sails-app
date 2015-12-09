@@ -28,7 +28,15 @@ module.exports = {
   // port: 80,
   port: process.env.port,
   hookTimeout: 60000,
-
+  
+  //setting for email
+  email: {
+    auth: {
+      user: process.env.emailUsername,
+      pass: process.env.emailPassword
+    }
+  }
+  
   /***************************************************************************
    * Set the log level in production environment to "silent"                 *
    ***************************************************************************/
