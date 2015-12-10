@@ -38,13 +38,24 @@ module.exports = {
     arrival_date: {
       type: 'date'
     },
-    
+    lang: {
+      type: 'string'
+    },
     toJSON: function(){
       var obj = this.toObject();
       delete obj._csrf;
-      delete obj.lang;
       return obj;
     }
+  },
+  afterCreate: function(values, cb){
+    //send email to the user
+    //values.email_addr
+    //values.first_name
+    sails.log.debug('send email');
+    EmailService.thankyouSignup(values);
+    sails.log.debug(values.lang);
+    cb();
   }
+  
 };
 
