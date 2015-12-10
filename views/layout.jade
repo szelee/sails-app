@@ -89,7 +89,7 @@ html
         .row
           .col.l6.m6.s6
             h5.white-text #{i18n('language')}
-            a.dropdown-button.btn.brown.darken-1(href='#',data-activates='languageDropdown') 
+            a.dropdown-button.btn.grey.lighten-1(href='#',data-activates='languageDropdown') 
               if (req.getLocale() == 'zh-hk') || (req.getLocale() == 'zh-tw' )
                 | #{i18n('zh-hk')}
               else if (req.getLocale() == 'zh-cn') || (req.getLocale() == 'zh-sg' )
